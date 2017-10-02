@@ -21,6 +21,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     curl            \
     wget            \
     sudo            \
-  && apt-get clean
-  && update-ca-certificates 
+  && apt-get clean  \
+  && update-ca-certificates
 
