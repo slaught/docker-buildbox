@@ -1,1 +1,6 @@
-/etc/stack/config.yaml
+resolver: lts-8.23
+system-ghc: true
+install-ghc: true
+local-bin-path: /usr/local/bin
+
+
