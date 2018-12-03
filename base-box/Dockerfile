@@ -22,6 +22,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     wget            \
     sudo            \
     gpg             \
+    dirmngr         \
   && apt-get clean  \
   && update-ca-certificates
 

@@ -1,6 +1,6 @@
 # postgres-client
 
-FROM slaught/docker-buildbox:base-box
+FROM slaught/docker-buildbox:base
 
 RUN set -ex; \
 # pub   4096R/ACCC4CF8 2011-10-13 [expires: 2019-07-02]
