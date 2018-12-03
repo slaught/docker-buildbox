@@ -24,6 +24,10 @@ RUN set -ex; \
   echo "New repo"
 
 RUN apt-get -q update && apt-get -q -y --no-install-recommends install \
+    parallel                  \
+    libgetopt-declare-perl    \
+    libtest-pod-perl          \
+    libtest-pod-coverage-perl \
     libpq-dev                 \
     postgresql-client-common  \
     postgresql-common         \
@@ -33,4 +37,6 @@ RUN apt-get -q update && apt-get -q -y --no-install-recommends install \
     pgtap                     \
     sudo                      \
     && apt-get clean
+
+RUN yes | sudo cpan TAP::Parser::SourceHandler::pgTAP
 
